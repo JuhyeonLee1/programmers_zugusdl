@@ -3,13 +3,16 @@ class Solution {
         String answer = "";
         
         for(int i=0; i<rsp.length(); i++){
-            if(rsp.charAt(i) == '2') { // 2(가위)일 때
-                answer += "0";
-            } else if(rsp.charAt(i) == '0') { // 0(바위)일 때
-                answer += "5";
-            } else if(rsp.charAt(i) == '5') { // 5(보)일 때
-                answer += "2";
-            }
+            switch(rsp.charAt(i)) {
+                case '2': answer += "0";
+                break;
+                
+                case '0': answer += "5";
+                break;
+                
+                case '5': answer += "2";
+                break;
+            }            
         }
         
         return answer;
