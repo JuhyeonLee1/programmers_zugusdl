@@ -6,7 +6,7 @@ class Solution {
             for(int i=1; i<=n; i+=2) {
                 answer += i;
             }
-        } else if (n % 2 == 0) { // 짝수일 때
+        } else { // 짝수일 때
             for(int i=2; i<=n; i+=2) {
                 answer += i * i;
             }
