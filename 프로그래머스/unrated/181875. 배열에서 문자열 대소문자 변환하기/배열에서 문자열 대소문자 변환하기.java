@@ -3,11 +3,7 @@ class Solution {
         String[] answer = new String[strArr.length];
         
         for(int i=0; i<strArr.length; i++) {
-            if(i % 2 == 1) { // 홀수번째
-                answer[i] = strArr[i].toUpperCase();
-            } else { // 짝수번째
-                answer[i] = strArr[i].toLowerCase();
-            }
+            answer[i] = i % 2 == 1 ? strArr[i].toUpperCase() : strArr[i].toLowerCase();
         }
         return answer;
     }
