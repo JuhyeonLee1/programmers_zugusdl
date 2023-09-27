@@ -4,12 +4,11 @@ class Solution {
         for(int i=0; i<my_string.length(); i++) {
             if(i == num1) {
                 answer += my_string.charAt(num2);
-                continue;
             } else if (i == num2) {
                 answer += my_string.charAt(num1);
-                continue;
+            } else {
+                answer += my_string.charAt(i);
             }
-            answer += my_string.charAt(i);
         }
         return answer;
     }
