@@ -6,7 +6,7 @@ class Solution {
         ArrayList<String> str_list = new ArrayList<String>();
         
         for(int i=0; i<str.length; i++) {
-            if(!str[i].equals("")) {
+            if(!str[i].isEmpty()) {
                 str_list.add(str[i]);
             }
         }
