@@ -3,8 +3,7 @@ class Solution {
         String answer = "";
         int a = Integer.valueOf(bin1, 2);
         int b = Integer.valueOf(bin2, 2);
-        int c = a + b;
-        answer = Integer.toBinaryString(c);
+        answer = Integer.toBinaryString(a+b);
         
         return answer;
     }
