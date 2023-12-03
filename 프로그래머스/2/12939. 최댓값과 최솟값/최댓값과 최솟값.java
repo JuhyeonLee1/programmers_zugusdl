@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public String solution(String s) {
         String answer = "";
@@ -9,15 +11,10 @@ class Solution {
             idx++;
         }
         
-        int max = intArr[0];
-        int min = intArr[0];
+        Arrays.sort(intArr);
         
-        idx = 0;
-        for (int i : intArr) {
-			max = Math.max(max, intArr[idx]);
-			min = Math.min(min, intArr[idx]);
-            idx++;
-		}
+        int min = intArr[0];
+        int max = intArr[intArr.length - 1];
         
         answer = min + " " + max;
         
