@@ -7,7 +7,8 @@ class Solution {
 
         for (char c : s.toCharArray()) {
             if (!stack.isEmpty() && stack.peek() == c) {
-                // stack 내부에 요소가 있거나, 같은 알파벳이 붙어있으면 stack에서 꺼내기
+                // stack 객체가 비어있지 않고,
+                // 마지막에 넣은 char와 이제 넣을 char가 같으면 stack에서 꺼내기
                 stack.pop();
             } else {
                 stack.push(c);
